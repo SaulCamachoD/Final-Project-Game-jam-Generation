@@ -5,25 +5,25 @@ using UnityEngine;
 public class CarSelector : MonoBehaviour
 {
     public GameObject[] cars;
-    private int currentIndex = 0;
+    public int currentCarIndex = 0;
 
     void Start()
     {
-        ShowCar(currentIndex);
+        ShowCar(currentCarIndex);
     }
 
     public void NextCar()
     {
-        cars[currentIndex].SetActive(false);
-        currentIndex = (currentIndex + 1) % cars.Length;
-        ShowCar(currentIndex);
+        cars[currentCarIndex].SetActive(false);
+        currentCarIndex = (currentCarIndex + 1) % cars.Length;
+        ShowCar(currentCarIndex);
     }
 
     public void PreviousCar()
     {
-        cars[currentIndex].SetActive(false);
-        currentIndex = (currentIndex - 1 + cars.Length) % cars.Length;
-        ShowCar(currentIndex);
+        cars[currentCarIndex].SetActive(false);
+        currentCarIndex = (currentCarIndex - 1 + cars.Length) % cars.Length;
+        ShowCar(currentCarIndex);
     }
 
     private void ShowCar(int index)

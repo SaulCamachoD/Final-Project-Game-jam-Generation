@@ -1713,6 +1713,7 @@ MonoBehaviour:
   - {fileID: 588560535}
   - {fileID: 929511189}
   - {fileID: 639076606}
+  currentCarIndex: 0
 --- !u!4 &1042308895
 Transform:
   m_ObjectHideFlags: 0
@@ -2277,7 +2278,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1516335185}
   - component: {fileID: 1516335184}
-  - component: {fileID: 1516335183}
   - component: {fileID: 1516335182}
   m_Layer: 0
   m_Name: ModelCamera
@@ -2330,14 +2330,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &1516335183
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516335181}
-  m_Enabled: 1
 --- !u!20 &1516335184
 Camera:
   m_ObjectHideFlags: 0
