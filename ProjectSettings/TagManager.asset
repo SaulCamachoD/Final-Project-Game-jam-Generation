@@ -16,6 +16,11 @@ TagManager:
   - Wood (Static)
   - Dirt (Static)
   - Wood
+  - MG1
+  - MG2
+  - AM1
+  - AM2
+  - AM3
   layers:
   - Default
   - TransparentFX
