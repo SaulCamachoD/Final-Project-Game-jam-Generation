@@ -3073,6 +3073,8 @@ GameObject:
   - component: {fileID: 1475431405}
   - component: {fileID: 1475431407}
   - component: {fileID: 1475431406}
+  - component: {fileID: 1475431408}
+  - component: {fileID: 1475431409}
   m_Layer: 5
   m_Name: PreArenaScreen
   m_TagString: Untagged
@@ -3143,6 +3145,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475431404}
   m_CullTransparentMesh: 1
+--- !u!114 &1475431408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475431404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64af9333feabcf1448e36e12d27fed4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownText: {fileID: 1577044648}
+  raceTimer: {fileID: 1475431409}
+--- !u!114 &1475431409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475431404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea0b00ce641f2a47a156cb6bca09d2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 155030300}
+  startMinutes: 2
+  startSeconds: 0
 --- !u!1 &1483971805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1217994249952064, guid: 5c5515e798148e74d84fd28db331d58e,
@@ -3427,7 +3458,7 @@ GameObject:
   - component: {fileID: 1577044649}
   - component: {fileID: 1577044648}
   m_Layer: 5
-  m_Name: TxtCount
+  m_Name: TxtCountdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
