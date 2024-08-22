@@ -15,14 +15,20 @@ public class UIPreArenaScreen : MonoBehaviour
 
     public void PlayerInfoLeaderboardCreator() 
     {
-        // Instancia el prefab
-        GameObject newItem = Instantiate(playerInfoLeaderboard);
+        for (int i = 0; i < players.Length; i ++)  
+        {
+            // Instancia el prefab
+            GameObject newItem = Instantiate(playerInfoLeaderboard);
 
-        // Establece el nuevo objeto como hijo del contenedor
-        newItem.transform.SetParent(leaderboardContainer);
+            // Establece el nuevo objeto como hijo del contenedor
+            newItem.transform.SetParent(leaderboardContainer);
 
-        // Reinicia las propiedades de escala y posición para ajustarse al layout
-        newItem.transform.localScale = Vector3.one;
-        newItem.transform.localPosition = Vector3.zero;
+            // Reinicia las propiedades de escala y posición para ajustarse al layout
+            newItem.transform.localScale = Vector3.one;
+            newItem.transform.localPosition = Vector3.zero;
+
+            newItem.GetComponent<UIPlayerInfoLeaderboard>().playerName.text = players[i].playerName;
+        }
+        
     }
 }
