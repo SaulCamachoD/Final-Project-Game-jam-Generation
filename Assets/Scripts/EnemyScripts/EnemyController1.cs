@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyController1 : MonoBehaviour
 {
@@ -15,6 +15,10 @@ public class EnemyController1 : MonoBehaviour
     public Transform[] patrolPoints;
     private int currentPointIndex = 0;
 
+    [Header("Race Settings")]
+    public Transform[] racePoints;
+    private int currentRacePointIndex = 0;
+
     [Header("Weapons Control")]
     public GameObject WeaponSpawnPoint;
 
@@ -24,6 +28,7 @@ public class EnemyController1 : MonoBehaviour
 
     private Rigidbody rb;
     private float  distanceToPlayer;
+    private NavMeshAgent agent;
     public enum EnemyStates
     {
         GetWeapon,
@@ -37,10 +42,10 @@ public class EnemyController1 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         currentState = EnemyStates.GetWeapon;
         distanceToPlayer = Vector3.Distance (transform.position,player.transform.position);
+        agent = GetComponent<NavMeshAgent>();
     }
     void Update()
     {
-        print(distanceToPlayer);
         switch (currentState)
         {
             case EnemyStates.GetWeapon:
@@ -72,10 +77,7 @@ public class EnemyController1 : MonoBehaviour
         float distance = Vector3.Distance(transform.position, powerUpsweapon.transform.position);
         if (distance > distanceToWeapon)
         {
-            Vector3 direction = powerUpsweapon.transform.position - transform.position;
-            direction.Normalize();
-            rb.velocity = direction * speedMovement;
-            RotateTowardsMovementDirection(direction);
+            agent.SetDestination(powerUpsweapon.transform.position);
         }
         else
         {
@@ -87,24 +89,18 @@ public class EnemyController1 : MonoBehaviour
     {
         GetWeapons();
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distanceToPlayer <= 30f && distanceToPlayer > 20f)
+        if (distanceToPlayer <= 40f && distanceToPlayer > 30f)
         {
             currentState = EnemyStates.Attack;
         }
 
-        Transform targetPoint = patrolPoints[currentPointIndex];
-        transform.position = Vector3.MoveTowards(transform.position, targetPoint.position, speedMovement * Time.deltaTime);
-        if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
+        else
         {
-            currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
-        }
-        Vector3 direction = (targetPoint.position - transform.position).normalized;
-
-        // Comprobar si la dirección no es cero antes de aplicar la rotación
-        if (direction != Vector3.zero)
-        {
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speedMovement);
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
+            }
+            agent.SetDestination(patrolPoints[currentPointIndex].position);
         }
 
     }
@@ -112,21 +108,16 @@ public class EnemyController1 : MonoBehaviour
     void Enemymovement()
     {
         GetWeapons();
-        /// Calcular la dirección hacia el jugador
-        Vector3 direction = (player.transform.position - transform.position).normalized;
-        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        // Comprobar si la dirección no es cero antes de aplicar la rotación
-        if (direction != Vector3.zero)
-        {
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speedMovement);
-        }
 
-        // Moverse hacia el jugador
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speedMovement * Time.deltaTime);
+        agent.updateRotation = true; // Asegura que el agente maneje la rotación automáticamente
+
+        // Moverse hacia el jugador usando NavMeshAgent
+        agent.SetDestination(player.transform.position);
+
+        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
         // Cambiar de estado si la distancia al jugador es mayor a 20 unidades
-        if (distanceToPlayer < 10f)
+        if (distanceToPlayer < 20f)
         {
             currentState = EnemyStates.MoveToNextPatrolPoint;
         }
@@ -136,26 +127,25 @@ public class EnemyController1 : MonoBehaviour
     {
         GetWeapons();
 
-        Transform targetPoint = patrolPoints[currentPointIndex];
-        transform.position = Vector3.MoveTowards(transform.position, targetPoint.position, speedMovement * Time.deltaTime);
-
-        if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
+        agent.SetDestination(patrolPoints[currentPointIndex].position);
+        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
-            currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
             currentState = EnemyStates.Patrol;
         }
 
-        Vector3 direction = (targetPoint.position - transform.position).normalized;
-
-        if (direction != Vector3.zero)
-        {
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speedMovement);
-        }
     }
         void GoingTofinish()
     {
+        agent.SetDestination(racePoints[currentRacePointIndex].position);
 
+        // Verifica si el agente ha llegado al punto de destino
+        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        {
+            // Avanza al siguiente punto en el arreglo
+            currentRacePointIndex = (currentRacePointIndex + 1) % racePoints.Length;
+
+            
+        }
     }
 
     void RotateTowardsMovementDirection(Vector3 direction)
@@ -173,5 +163,27 @@ public class EnemyController1 : MonoBehaviour
         {
             currentState = EnemyStates.GetWeapon;
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          
+            StartCoroutine(ResumeMovementAfterDelay());
+            currentState = EnemyStates.Patrol;
+
+        }
+    }
+
+    private IEnumerator ResumeMovementAfterDelay()
+    {
+        agent.isStopped = true;  // Detener el agente
+        yield return new WaitForSeconds(0.5f); // Esperar medio segundo
+        agent.isStopped = false; // Reanudar el agente
+
+        // Establecer el destino al próximo punto de patrullaje
+        currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
+        agent.SetDestination(patrolPoints[currentPointIndex].position);
     }
 }
