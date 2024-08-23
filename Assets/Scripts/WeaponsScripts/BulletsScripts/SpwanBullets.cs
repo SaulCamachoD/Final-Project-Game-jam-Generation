@@ -9,14 +9,14 @@ public class SpwanBullets : MonoBehaviour
     public float bulletSpeed = 20f;
     public float munition = 4f;
     protected bool _canShoot;
-
     protected private void Start()
     {
         _canShoot = true;
+      
     }
 
     protected virtual void Update()
-    {
+    {   
         if (Input.GetButtonDown("Fire1") && _canShoot)
         {
             Shoot();

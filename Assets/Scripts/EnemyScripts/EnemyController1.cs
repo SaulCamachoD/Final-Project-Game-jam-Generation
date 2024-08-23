@@ -27,7 +27,7 @@ public class EnemyController1 : MonoBehaviour
 
 
     private Rigidbody rb;
-    private float  distanceToPlayer;
+    private float distanceToPlayer;
     private NavMeshAgent agent;
     public enum EnemyStates
     {
@@ -41,7 +41,7 @@ public class EnemyController1 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         currentState = EnemyStates.GetWeapon;
-        distanceToPlayer = Vector3.Distance (transform.position,player.transform.position);
+        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         agent = GetComponent<NavMeshAgent>();
     }
     void Update()
@@ -60,7 +60,7 @@ public class EnemyController1 : MonoBehaviour
                 Enemymovement();
                 break;
 
-            case EnemyStates.MoveToNextPatrolPoint: 
+            case EnemyStates.MoveToNextPatrolPoint:
                 MoveToNextPatrolPoint();
                 break;
 
@@ -69,6 +69,15 @@ public class EnemyController1 : MonoBehaviour
                 break;
 
 
+        }
+        {
+            foreach (var spawnPoint in SpawnPointStatus.spawnPointStatuses)
+            {
+                Vector3 position = spawnPoint.Key;
+                int status = spawnPoint.Value;
+
+                Debug.Log($"Spawned Weapon: Spawn Point at {position} has status: {status}");
+            }
         }
     }
 
@@ -134,7 +143,7 @@ public class EnemyController1 : MonoBehaviour
         }
 
     }
-        void GoingTofinish()
+    void GoingTofinish()
     {
         agent.SetDestination(racePoints[currentRacePointIndex].position);
 
@@ -144,7 +153,7 @@ public class EnemyController1 : MonoBehaviour
             // Avanza al siguiente punto en el arreglo
             currentRacePointIndex = (currentRacePointIndex + 1) % racePoints.Length;
 
-            
+
         }
     }
 
@@ -159,7 +168,7 @@ public class EnemyController1 : MonoBehaviour
 
     void GetWeapons()
     {
-        if(WeaponSpawnPoint.transform.childCount == 0)
+        if (WeaponSpawnPoint.transform.childCount == 0)
         {
             currentState = EnemyStates.GetWeapon;
         }
@@ -169,7 +178,7 @@ public class EnemyController1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-          
+
             StartCoroutine(ResumeMovementAfterDelay());
             currentState = EnemyStates.Patrol;
 
@@ -186,4 +195,5 @@ public class EnemyController1 : MonoBehaviour
         currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
         agent.SetDestination(patrolPoints[currentPointIndex].position);
     }
+
 }
