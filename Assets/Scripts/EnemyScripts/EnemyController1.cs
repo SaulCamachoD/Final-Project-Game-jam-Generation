@@ -29,6 +29,8 @@ public class EnemyController1 : MonoBehaviour
     private Rigidbody rb;
     private float distanceToPlayer;
     private NavMeshAgent agent;
+
+    private Vector3 nearestAvailablePosition = Vector3.zero;
     public enum EnemyStates
     {
         GetWeapon,
@@ -70,28 +72,47 @@ public class EnemyController1 : MonoBehaviour
 
 
         }
-        {
-            foreach (var spawnPoint in SpawnPointStatus.spawnPointStatuses)
-            {
-                Vector3 position = spawnPoint.Key;
-                int status = spawnPoint.Value;
+        FindNearestAvailablePosition();
+    }
 
-                Debug.Log($"Spawned Weapon: Spawn Point at {position} has status: {status}");
+    void FindNearestAvailablePosition()
+    {
+        float nearestDistance = Mathf.Infinity;
+
+        foreach (var spawnPoint in SpawnPointStatus.spawnPointStatuses)
+        {
+            Vector3 position = spawnPoint.Key;
+            int status = spawnPoint.Value;
+            if (status == 1)
+            {
+                float distance = Vector3.Distance(transform.position, position);
+
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearestAvailablePosition = position;
+                }
             }
         }
     }
 
     void MoveAWeapons()
     {
-        float distance = Vector3.Distance(transform.position, powerUpsweapon.transform.position);
-        if (distance > distanceToWeapon)
-        {
-            agent.SetDestination(powerUpsweapon.transform.position);
-        }
-        else
-        {
-            currentState = EnemyStates.Patrol;
-        }
+        
+            float distance = Vector3.Distance(transform.position, nearestAvailablePosition);
+            if (distance > distanceToWeapon)
+            {
+            print(distance);
+            agent.SetDestination(nearestAvailablePosition);
+                
+            }
+            else
+            {
+                
+                currentState = EnemyStates.Patrol;
+            }
+        
+        
     }
 
     void NormalPatrol()
