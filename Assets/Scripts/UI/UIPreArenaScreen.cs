@@ -28,6 +28,9 @@ public class UIPreArenaScreen : MonoBehaviour
             newItem.transform.localPosition = Vector3.zero;
 
             newItem.GetComponent<UIPlayerInfoLeaderboard>().playerName.text = players[i].playerName;
+            newItem.GetComponent<UIPlayerInfoLeaderboard>().playerHealthBar.value = players[i].playerHealthBar;
+            newItem.GetComponent<UIPlayerInfoLeaderboard>().playerKills.text = players[i].playerKills.ToString();
+            newItem.GetComponent<UIPlayerInfoLeaderboard>().playerPortrait.sprite = players[i].playerPortrait;
         }
         
     }
