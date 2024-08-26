@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIScreenFlow : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class UIScreenFlow : MonoBehaviour
     {
         InactivateAllScreens();
         screens[1].SetActive(true);
+    }
+    public void OnPlayGameButtonPressed()
+    {
+        SceneManager.LoadScene("GustavoScene");
     }
 
     public void InactivateAllScreens()

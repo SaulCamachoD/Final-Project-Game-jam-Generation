@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CarSelector : MonoBehaviour
@@ -29,5 +27,6 @@ public class CarSelector : MonoBehaviour
     private void ShowCar(int index)
     {
         cars[index].SetActive(true);
+        CarSelectionData.selectedCarIndex = index;
     }
 }
