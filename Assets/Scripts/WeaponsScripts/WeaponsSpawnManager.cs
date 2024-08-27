@@ -11,19 +11,34 @@ public class WeaponsSpawnManager : MonoBehaviour
 
     private void Start()
     {
-        // Aparecer las armas en sus puntos de spawn al inicio del juego
-        for (int i = 0; i < spawnPoints.Length; i++)
+        int numPoints = spawnPoints.Length;
+        int numWeapons = weaponPrefabs.Length;
+
+        // Maneja los puntos de spawn hasta el número de prefabs disponibles
+        for (int i = 0; i < numPoints; i++)
         {
             Vector3 spawnPosition = spawnPoints[i].position;
-            InstantiateWeaponAt(spawnPoints[i], i);
-            weaponSpawnPoints.Add(spawnPosition, i);
-            spawnPointTransforms.Add(i, spawnPoints[i]);
+            int weaponIndex;
+
+            if (i < numWeapons)
+            {
+                // Si hay más puntos de spawn que prefabs, asigna un prefab específico a los primeros puntos
+                weaponIndex = i;
+            }
+            else
+            {
+                // Asigna una arma aleatoria a los puntos de spawn restantes
+                weaponIndex = Random.Range(0, numWeapons);
+            }
+
+            InstantiateWeaponAt(spawnPoints[i], weaponIndex);
+            weaponSpawnPoints[spawnPosition] = weaponIndex;
+            spawnPointTransforms[i] = spawnPoints[i];
         }
     }
 
     private void Update()
     {
-        
         CheckSpawnPoints();
     }
 
@@ -39,10 +54,11 @@ public class WeaponsSpawnManager : MonoBehaviour
         if (weaponSpawnPoints.ContainsKey(spawnPosition))
         {
             int weaponIndex = weaponSpawnPoints[spawnPosition];
-            Transform spawnPoint = spawnPointTransforms[weaponIndex];
+            Transform spawnPoint = spawnPointTransforms[weaponSpawnPoints[spawnPosition]];
             InstantiateWeaponAt(spawnPoint, weaponIndex);
         }
     }
+
     private void CheckSpawnPoints()
     {
         foreach (var spawnPoint in spawnPoints)

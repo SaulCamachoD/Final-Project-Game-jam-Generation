@@ -20,7 +20,7 @@ public class UIScreenFlow : MonoBehaviour
     }
     public void OnPlayGameButtonPressed()
     {
-        SceneManager.LoadScene("GustavoScene");
+        SceneManager.LoadScene("Main");
     }
 
     public void InactivateAllScreens()

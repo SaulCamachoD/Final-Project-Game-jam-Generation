@@ -39,6 +39,13 @@ public class EnemyController1 : MonoBehaviour
         MoveToNextPatrolPoint,
         Run
     }
+
+    private void Awake()
+    {
+        powerUpsweapon = GameObject.Find("WeaponsSpawnsPoints");
+        player = GameObject.FindGameObjectWithTag("Player"); 
+        
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();

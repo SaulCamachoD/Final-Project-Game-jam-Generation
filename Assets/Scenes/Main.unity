@@ -126,11 +126,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 110814, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
       propertyPath: m_Name
       value: Freeway Straight 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 110814, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 494338, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -383,6 +387,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 36660585}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &47314165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47314166}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47314166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47314165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &53932378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -394,6 +429,10 @@ PrefabInstance:
     - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_Name
       value: Parkinglot Edge 4_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
@@ -811,6 +850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3
@@ -885,6 +928,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -1247,6 +1294,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 146233637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &151765095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151765096}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151765096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151765095}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &167781607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1437,6 +1515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 3_3
       objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1506,11 +1588,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 172256, guid: 25e5c01865542e449bf00fcc40da6a11, type: 3}
       propertyPath: m_Name
       value: Highway Bridge 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 172256, guid: 25e5c01865542e449bf00fcc40da6a11, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 429354, guid: 25e5c01865542e449bf00fcc40da6a11, type: 3}
       propertyPath: m_LocalScale.x
@@ -1869,6 +1955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4_3
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1938,11 +2028,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 126476, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_Name
       value: Highway S-Curve
+      objectReference: {fileID: 0}
+    - target: {fileID: 126476, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 416004, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_LocalScale.x
@@ -1966,7 +2060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416004, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.367714
+      value: 82.36774
       objectReference: {fileID: 0}
     - target: {fileID: 416004, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2013,11 +2107,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 126476, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_Name
       value: Highway S-Curve
+      objectReference: {fileID: 0}
+    - target: {fileID: 126476, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 416004, guid: c551be7c89271e44c8a795eff4869f62, type: 3}
       propertyPath: m_LocalScale.x
@@ -2082,17 +2180,58 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 211968978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &214041756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214041757}
+  m_Layer: 0
+  m_Name: EnemyFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214041757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214041756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 382070654}
+  - {fileID: 47314166}
+  - {fileID: 1435373276}
+  - {fileID: 1807058304}
+  - {fileID: 1721652170}
+  - {fileID: 151765096}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &214342993
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 168972, guid: 401d27194e0344948b125cf0483f7637, type: 3}
       propertyPath: m_Name
       value: Freeway Lift Highway_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 168972, guid: 401d27194e0344948b125cf0483f7637, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 459074, guid: 401d27194e0344948b125cf0483f7637, type: 3}
       propertyPath: m_LocalScale.x
@@ -2157,6 +2296,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 214342993}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &222446981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222446982}
+  m_Layer: 0
+  m_Name: RacePoint_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222446982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222446981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093311940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &228495726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2642,11 +2812,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_Name
       value: Highway Curve 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 442050, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_LocalScale.x
@@ -2861,6 +3035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272310895}
   - component: {fileID: 272310894}
+  - component: {fileID: 272310896}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -2886,8 +3061,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1530398123}
-  m_Follow: {fileID: 1530398123}
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -2916,13 +3091,31 @@ Transform:
   m_GameObject: {fileID: 272310893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9882436, z: -0.15288766, w: 0}
-  m_LocalPosition: {x: 59.466, y: 4.906, z: 93.38}
+  m_LocalPosition: {x: 100.65, y: 2.5, z: 154.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2069184779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272310896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272310893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a290542e2791e14cb12f081e69bf5f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefabs:
+  - {fileID: 3882019860133196096, guid: 890ed9f34d8d69a4bae79b66b10e7dde, type: 3}
+  - {fileID: 8789309632957783001, guid: cd85cce9512ba3f48ba58069a1abb4ca, type: 3}
+  - {fileID: 1979839624981642475, guid: 81d9b9db9d6646d4da4d535ce78b7db9, type: 3}
+  - {fileID: 38798440800673146, guid: fed88c6ec72b51d429de16164c229677, type: 3}
+  - {fileID: 5339706589478053747, guid: fda59ba3b50d7b542862e4b11a320ca3, type: 3}
 --- !u!1001 &287647151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2934,6 +3127,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -3369,6 +3566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_9
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -3444,6 +3645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_7
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -3518,6 +3723,10 @@ PrefabInstance:
     - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_Name
       value: Parkinglot Edge 4_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
@@ -3670,7 +3879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 379004450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3704,8 +3913,39 @@ Transform:
   - {fileID: 1774375803}
   - {fileID: 1050292532}
   - {fileID: 710721523}
-  m_Father: {fileID: 1937630552}
+  m_Father: {fileID: 1193361729}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &382070653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382070654}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &382070654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382070653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &400781470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3800,6 +4040,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 400781470}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &402826377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402826378}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402826378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402826377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.5, y: 0, z: 57.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &410105604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4226,11 +4497,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_Name
       value: Highway Straight 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 461726, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_LocalScale.x
@@ -4494,6 +4769,10 @@ PrefabInstance:
     - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_Name
       value: Parkinglot Corner 3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457996, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_LocalScale.x
@@ -5022,6 +5301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4_1
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -5085,6 +5368,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 509437160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &532917559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532917560}
+  m_Layer: 0
+  m_Name: RacePoint_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &532917560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532917559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093311940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569213184
 GameObject:
   m_ObjectHideFlags: 0
@@ -5118,6 +5432,195 @@ Transform:
   - {fileID: 762737675}
   m_Father: {fileID: 1937630552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &570019943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570019944}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570019944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570019943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.3, y: 0, z: -48.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &573469497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 663209160560213488, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -89.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 663209160560213488, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 663209160560213488, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 105.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 99.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939685131058340844, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292069769760931470, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532612926645656032, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 81.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532612926645656032, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532612926645656032, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882430903862822328, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -81.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882430903862822328, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882430903862822328, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952380464911098706, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952380464911098706, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952380464911098706, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 72.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650484384205683915, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650484384205683915, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650484384205683915, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650484384205683915, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650484384205683915, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148695878623718555, guid: 8012450c0a480ef41a16c7d3602469d1,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneLogic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8012450c0a480ef41a16c7d3602469d1, type: 3}
 --- !u!1001 &602585719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5652,6 +6155,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644796425}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &649518225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649518226}
+  m_Layer: 0
+  m_Name: RacePoint_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649518226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649518225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093311940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &649822966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5732,11 +6266,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_Name
       value: Highway Straight 3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 461726, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_LocalScale.x
@@ -6095,6 +6633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 3_1
       objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -6300,6 +6842,10 @@ PrefabInstance:
     - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_Name
       value: Parkinglot Corner 3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457996, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_LocalScale.x
@@ -7066,6 +7612,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 792947978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &825999493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825999494}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &825999494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825999493}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.1, y: 0, z: -44.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832299835
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,7 +7805,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   m_Intensity: 4.87
   m_Range: 10
   m_SpotAngle: 30
@@ -7288,7 +7865,7 @@ Transform:
   m_GameObject: {fileID: 842123899}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -38.8, y: 68.2, z: 67.3}
+  m_LocalPosition: {x: -1.89, y: 68.2, z: 78.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7323,11 +7900,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_Name
       value: Highway Curve 1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 442050, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_LocalScale.x
@@ -7404,6 +7985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_4
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7473,11 +8058,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_Name
       value: Highway Curve 1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 170104, guid: 68199663c6e51f44bae66172807b8014, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 442050, guid: 68199663c6e51f44bae66172807b8014, type: 3}
       propertyPath: m_LocalScale.x
@@ -7878,6 +8467,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 878455596}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &881961571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881961572}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &881961572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881961571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.2, y: 0, z: -26.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &886340044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8234,6 +8854,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 897717551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &909706195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909706196}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909706196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909706195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.53, y: 0, z: -37.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &942737602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8320,6 +8971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -8383,6 +9038,100 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 948038745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &963709272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 963709273}
+  - component: {fileID: 963709274}
+  m_Layer: 0
+  m_Name: WeaponsSpawnsPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &963709273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963709272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 110.4, y: 0.3, z: 108.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1717246914}
+  - {fileID: 402826378}
+  - {fileID: 570019944}
+  - {fileID: 825999494}
+  - {fileID: 909706196}
+  - {fileID: 881961572}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963709274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963709272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9b36d9d5fc74d4a80ca2210ec03d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefabs:
+  - {fileID: 3148701260531155702, guid: 8a79d07b68a04e04893f55706c04c709, type: 3}
+  - {fileID: 3799642946864707684, guid: bd69836e884f76548a917fab35e31898, type: 3}
+  - {fileID: 508095956279972766, guid: 774cb87d0d05c8f4191d24cd5ad7dc5e, type: 3}
+  - {fileID: 8886941365005126038, guid: 2505b6e51c3b35e4ab89c39df2d1342a, type: 3}
+  - {fileID: 752652047628635314, guid: 49d0f051260700549b242794fbfea1b2, type: 3}
+  spawnPoints:
+  - {fileID: 1717246914}
+  - {fileID: 402826378}
+  - {fileID: 570019944}
+  - {fileID: 825999494}
+  - {fileID: 909706196}
+  - {fileID: 881961572}
+--- !u!1 &969398337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969398338}
+  m_Layer: 0
+  m_Name: RacePoint_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969398338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969398337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093311940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &992771378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8641,6 +9390,10 @@ PrefabInstance:
     - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_Name
       value: Parkinglot Corner 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457996, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_LocalScale.x
@@ -8958,17 +9711,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1084313604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1093311939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093311940}
+  m_Layer: 0
+  m_Name: RaceFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093311940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093311939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 649518226}
+  - {fileID: 969398338}
+  - {fileID: 532917560}
+  - {fileID: 1145757668}
+  - {fileID: 222446982}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1098921551
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 110814, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
       propertyPath: m_Name
       value: Freeway Straight 2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110814, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 494338, guid: ea8ec36c7f9b40f4faa40bf80afec5a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -9227,6 +10020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4_4
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9290,6 +10087,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1141282062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1145757667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145757668}
+  m_Layer: 0
+  m_Name: RacePoint_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1145757668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145757667}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093311940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1161464988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9469,11 +10297,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 170826, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_Name
       value: Highway Straight 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 170826, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalScale.x
@@ -9644,6 +10476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9707,17 +10543,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1193061886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1193361728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193361729}
+  - component: {fileID: 1193361730}
+  m_Layer: 3
+  m_Name: RunTarrein
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193361729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193361728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 208561523}
+  - {fileID: 1504226733}
+  - {fileID: 1349847378}
+  - {fileID: 1575234872}
+  - {fileID: 2144227013}
+  - {fileID: 1212118633}
+  - {fileID: 445603719}
+  - {fileID: 651266180}
+  - {fileID: 1467750237}
+  - {fileID: 258127648}
+  - {fileID: 855229639}
+  - {fileID: 184035347}
+  - {fileID: 845940508}
+  - {fileID: 1526524742}
+  - {fileID: 1172286688}
+  - {fileID: 214342994}
+  - {fileID: 211968979}
+  - {fileID: 2010628327}
+  - {fileID: 1781800898}
+  - {fileID: 379004450}
+  - {fileID: 32380488}
+  - {fileID: 1098921552}
+  - {fileID: 2082927733}
+  - {fileID: 2003319608}
+  m_Father: {fileID: 1937630552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1193361730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193361728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 0203380dbde4e5e4aa0e34260a0acf51, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1001 &1212118632
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 168972, guid: 401d27194e0344948b125cf0483f7637, type: 3}
       propertyPath: m_Name
       value: Freeway Lift Highway
+      objectReference: {fileID: 0}
+    - target: {fileID: 168972, guid: 401d27194e0344948b125cf0483f7637, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 459074, guid: 401d27194e0344948b125cf0483f7637, type: 3}
       propertyPath: m_LocalScale.x
@@ -9868,6 +10795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 3
       objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9942,6 +10873,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -10542,6 +11477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_6
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3
@@ -10690,11 +11629,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 157490, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_Name
       value: Highway Bridge 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 157490, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalScale.x
@@ -11049,6 +11992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -11112,6 +12059,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1427523313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1435373275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435373276}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1435373276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435373275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1435873670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11406,6 +12384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4_5
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -11559,6 +12541,10 @@ PrefabInstance:
     - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_Name
       value: Parkinglot Edge 3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
@@ -11817,11 +12803,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_Name
       value: Highway Straight 3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 106074, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 461726, guid: 27efc696dd4698a43a8c68ebcf493a87, type: 3}
       propertyPath: m_LocalScale.x
@@ -12040,11 +13030,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 170826, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_Name
       value: Highway Straight 4_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 170826, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalScale.x
@@ -12076,15 +13070,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 436234, guid: 3981927452c32484d9640b2bf295fc6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12115,11 +13109,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 143752, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
       propertyPath: m_Name
       value: Highway Straight 2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143752, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 486722, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
       propertyPath: m_LocalScale.x
@@ -12277,12 +13275,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3517792593053471781, guid: b31cca7e1418b9042921e3ec481ec6ac,
     type: 3}
   m_PrefabInstance: {fileID: 1527814178}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1530398123 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8740433120764184294, guid: 890ed9f34d8d69a4bae79b66b10e7dde,
-    type: 3}
-  m_PrefabInstance: {fileID: 1550585567}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1550585567
 PrefabInstance:
@@ -12492,11 +13484,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 157490, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_Name
       value: Highway Bridge 1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 157490, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalScale.x
@@ -12512,7 +13508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.0558105
+      value: 6.0558167
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12520,7 +13516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.36775
+      value: 82.36774
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12528,7 +13524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalRotation.y
@@ -12536,7 +13532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12797,6 +13793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Corner 3
       objectReference: {fileID: 0}
+    - target: {fileID: 115310, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 457996, guid: 0dd93b050725d874f92e2caeffb53367, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -13044,6 +14044,10 @@ PrefabInstance:
     - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_Name
       value: Parkinglot Edge 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
@@ -13390,6 +14394,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1692050461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1717246913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717246914}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717246914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717246913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -80.6, y: 0, z: 29.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963709273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1718640536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13401,6 +14436,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -13465,6 +14504,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1718640536}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1721652169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721652170}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1721652170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721652169}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1725993750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13744,6 +14814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 3_1
       objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -13822,7 +14896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1781481794
 Transform:
   m_ObjectHideFlags: 0
@@ -13849,7 +14923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781800898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13889,7 +14963,7 @@ Transform:
   - {fileID: 183554129}
   - {fileID: 1604111594}
   - {fileID: 465347660}
-  m_Father: {fileID: 1937630552}
+  m_Father: {fileID: 1193361729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1788560458
 GameObject:
@@ -14019,6 +15093,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1799510523}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1807058303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807058304}
+  m_Layer: 0
+  m_Name: EnemyPointPatrol_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807058304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807058303}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214041757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1813765958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14125,6 +15230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Edge 4_4
       objectReference: {fileID: 0}
+    - target: {fileID: 103474, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 458788, guid: 4d2cdf2836f78914f85386a10cd7db79, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -14199,6 +15308,10 @@ PrefabInstance:
     - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_Name
       value: Parkinglot Edge 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 112830, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 474188, guid: ed0aae2e11d87014f915283c004cede3, type: 3}
       propertyPath: m_LocalScale.x
@@ -14503,6 +15616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3
@@ -14778,34 +15895,12 @@ Transform:
   - {fileID: 88724843}
   - {fileID: 36624755}
   - {fileID: 1951178070}
-  - {fileID: 208561523}
   - {fileID: 313116914}
   - {fileID: 1374670628}
   - {fileID: 1949761161}
-  - {fileID: 1504226733}
-  - {fileID: 1349847378}
-  - {fileID: 1575234872}
   - {fileID: 1595363400}
   - {fileID: 167781608}
-  - {fileID: 2144227013}
-  - {fileID: 1212118633}
-  - {fileID: 445603719}
-  - {fileID: 651266180}
-  - {fileID: 1467750237}
-  - {fileID: 258127648}
-  - {fileID: 855229639}
-  - {fileID: 184035347}
-  - {fileID: 845940508}
-  - {fileID: 1526524742}
-  - {fileID: 1172286688}
-  - {fileID: 214342994}
-  - {fileID: 211968979}
-  - {fileID: 2010628327}
-  - {fileID: 1781800898}
-  - {fileID: 379004450}
-  - {fileID: 32380488}
-  - {fileID: 1098921552}
-  - {fileID: 2082927733}
+  - {fileID: 1193361729}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949761160
@@ -14949,6 +16044,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -15153,6 +16252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkinglot Center 2_4
       objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -15227,7 +16330,7 @@ GameObject:
   - component: {fileID: 2003319608}
   - component: {fileID: 2003319607}
   - component: {fileID: 2003319606}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15302,12 +16405,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003319605}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 328.455, y: -22.33, z: 607.3395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1193361729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2010628326
 PrefabInstance:
@@ -15315,11 +16418,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 192440, guid: e22ea203430a7754fa2d9f5192effac9, type: 3}
       propertyPath: m_Name
       value: Highway Curve 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 192440, guid: e22ea203430a7754fa2d9f5192effac9, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 471916, guid: e22ea203430a7754fa2d9f5192effac9, type: 3}
       propertyPath: m_LocalScale.x
@@ -15395,6 +16502,10 @@ PrefabInstance:
     - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_Name
       value: Parkinglot Center 2_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 190354, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 419646, guid: 5687d55acdf3c094aa163098fed8dbbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -15578,11 +16689,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 163924, guid: 7ff5db574d5d2df479ee7bae7f713787, type: 3}
       propertyPath: m_Name
       value: Freeway Cross Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 163924, guid: 7ff5db574d5d2df479ee7bae7f713787, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 413422, guid: 7ff5db574d5d2df479ee7bae7f713787, type: 3}
       propertyPath: m_LocalScale.x
@@ -15935,11 +17050,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1937630552}
+    m_TransformParent: {fileID: 1193361729}
     m_Modifications:
     - target: {fileID: 143752, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
       propertyPath: m_Name
       value: Highway Straight 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143752, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 486722, guid: 260ff3c3667b2bd4f82382b31d2ef823, type: 3}
       propertyPath: m_LocalScale.x
@@ -16012,6 +17131,9 @@ SceneRoots:
   - {fileID: 272310895}
   - {fileID: 842123901}
   - {fileID: 1937630552}
-  - {fileID: 2003319608}
   - {fileID: 691151187}
   - {fileID: 1781481794}
+  - {fileID: 573469497}
+  - {fileID: 214041757}
+  - {fileID: 963709273}
+  - {fileID: 1093311940}
