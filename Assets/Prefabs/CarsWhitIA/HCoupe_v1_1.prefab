@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 3266968105136376968}
   - component: {fileID: 989156771410095602}
   - component: {fileID: 6524687078340035713}
+  - component: {fileID: 8030280808775902700}
   m_Layer: 0
   m_Name: Tire_v3_R
   m_TagString: Untagged
@@ -249,6 +250,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &8030280808775902700
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964762956997929592}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57058066
+  m_Center: {x: 0.15211241, y: -0.000000059604645, z: -0.00000023841858}
 --- !u!1 &4256853269817732415
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +282,7 @@ GameObject:
   - component: {fileID: 3964744182338281405}
   - component: {fileID: 5019625588112202943}
   - component: {fileID: 1131323734967459469}
+  - component: {fileID: 7092302284806803482}
   m_Layer: 0
   m_Name: Tire_v3_L
   m_TagString: Untagged
@@ -332,6 +355,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &7092302284806803482
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4256853269817732415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57058066
+  m_Center: {x: -0.15211238, y: -0.000000059604645, z: -0.00000023841858}
 --- !u!1 &5434351884452592413
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +387,7 @@ GameObject:
   - component: {fileID: 2428511784481257506}
   - component: {fileID: 8664738271266358277}
   - component: {fileID: 8460184286115557807}
+  - component: {fileID: 8049437388442756987}
   m_Layer: 0
   m_Name: Tire_v3_R
   m_TagString: Untagged
@@ -415,6 +460,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &8049437388442756987
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5434351884452592413}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57058066
+  m_Center: {x: 0.15211241, y: -0.000000059604645, z: -0.00000023841858}
 --- !u!1 &5574082569964601625
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,8 +595,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.4504328, y: 1.6554561, z: 4.520546}
-  m_Center: {x: -0.00000011920929, y: -0.41080973, z: 3.2499172e-17}
+  m_Size: {x: 0.8160515, y: 1.2963936, z: 4.520546}
+  m_Center: {x: 0.122564316, y: 0.05516544, z: 4.1127897e-17}
 --- !u!54 &96169582246930584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -643,6 +709,7 @@ GameObject:
   - component: {fileID: 8523780577391715700}
   - component: {fileID: 8428624909458385270}
   - component: {fileID: 7765381844931362988}
+  - component: {fileID: 6121531061320296246}
   m_Layer: 0
   m_Name: Tire_v3_L
   m_TagString: Untagged
@@ -715,6 +782,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &6121531061320296246
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7765796413275625746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57058066
+  m_Center: {x: -0.15211238, y: -0.000000059604645, z: -0.00000023841858}
 --- !u!1 &9032897563809432438
 GameObject:
   m_ObjectHideFlags: 0
