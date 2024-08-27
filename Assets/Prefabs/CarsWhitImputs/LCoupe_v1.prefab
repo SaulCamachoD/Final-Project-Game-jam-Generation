@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8761634070917961951}
-  motorForce: 30
+  motorForce: 50
   maxSteeringAngle: 2
   maxSpeed: 50
   wheelsAngle: 45

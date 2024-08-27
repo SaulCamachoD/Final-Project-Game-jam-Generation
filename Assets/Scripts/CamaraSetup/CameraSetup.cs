@@ -1,58 +1,29 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraSetup : MonoBehaviour
 {
-    public GameObject[] carPrefabs; // Asigna aquí los prefabs de los carros.
-    private CinemachineVirtualCamera virtualCamera;
+    public GameObject carPrefab; // Prefab del carro que se spawnea
+    public Transform spawnPoint; // Punto de spawn del carro
+    public CinemachineVirtualCamera virtualCamera; // Referencia a la Cinemachine Virtual Camera
 
-    void Start()
+    private void Start()
     {
-        virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        // Spawnear el carro en el punto de spawn
+        GameObject spawnedCar = Instantiate(carPrefab, spawnPoint.position, spawnPoint.rotation);
 
-        if (carPrefabs.Length == 0)
+        // Buscar el objeto hijo llamado "target" en el carro spawneado
+        Transform target = spawnedCar.transform.Find("target");
+
+        if (target != null)
         {
-            Debug.LogError("No car prefabs assigned.");
-            return;
-        }
-
-        // Encuentra el carro spawneado en la escena.
-        GameObject car = FindActiveCar();
-
-        if (car != null)
-        {
-            // Busca el hijo "Target" dentro del GameObject del carro.
-            Transform targetTransform = car.transform.Find("Target");
-
-            if (targetTransform != null)
-            {
-                // Asigna el hijo "Target" como objetivo de la cámara.
-                virtualCamera.Follow = targetTransform;
-                virtualCamera.LookAt = targetTransform;
-            }
-            else
-            {
-                Debug.LogError("Target not found within the car.");
-            }
+            // Asignar el target a las propiedades Follow y Look At de la cámara
+            virtualCamera.Follow = target;
+            virtualCamera.LookAt = target;
         }
         else
         {
-            Debug.LogError("Car not found in the scene.");
+            Debug.LogError("No se encontró un objeto hijo llamado 'target' en el carro spawneado.");
         }
-    }
-
-    // Método para encontrar el carro activo en la escena.
-    private GameObject FindActiveCar()
-    {
-        foreach (var prefab in carPrefabs)
-        {
-            if (GameObject.Find(prefab.name) != null)
-            {
-                return GameObject.Find(prefab.name);
-            }
-        }
-        return null;
     }
 }
