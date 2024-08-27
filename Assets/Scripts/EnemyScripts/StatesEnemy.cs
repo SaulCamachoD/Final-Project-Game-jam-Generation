@@ -1,5 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StatesEnemy : MonoBehaviour
 {
@@ -8,15 +8,13 @@ public class StatesEnemy : MonoBehaviour
     public GameObject powerUpsweapon;
     public float distanceToWeapon = 0f;
     public float maxDistance = 20f;
-    public float speedMovement = 2f;
-    public float speedRotation = 2f;
+    private NavMeshAgent agent;
     private Rigidbody rb;
     [SerializeField] private EnemyStates currentState;
 
-    public float radioZonaAtaque = 5f; // Distancia para iniciar el ataque
-    public float distanciaAlcanzarWaypoint = 0.5f; // Distancia para considerar que se alcanzó el waypoint
-    public float bufferZoneRadius = 10f; // Radio de la zona de transición
-    private int indiceWaypointActual = 0; // Índice del waypoint actual
+    public float distanciaAlcanzarWaypoint = 0.5f;
+    public float bufferZoneRadius = 10f;
+    private int indiceWaypointActual = 0;
 
     public enum EnemyStates
     {
@@ -29,6 +27,8 @@ public class StatesEnemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.isKinematic = true; // Hacer el Rigidbody kinematic para evitar conflictos
+        agent = GetComponent<NavMeshAgent>();
         currentState = EnemyStates.GetWeapon;
     }
 
@@ -59,10 +59,7 @@ public class StatesEnemy : MonoBehaviour
         float distance = Vector3.Distance(transform.position, powerUpsweapon.transform.position);
         if (distance > distanceToWeapon)
         {
-            Vector3 direction = powerUpsweapon.transform.position - transform.position;
-            direction.Normalize();
-            rb.velocity = direction * speedMovement;
-            RotateTowardsMovementDirection(direction);
+            agent.SetDestination(powerUpsweapon.transform.position);
         }
         else
         {
@@ -75,10 +72,7 @@ public class StatesEnemy : MonoBehaviour
         float distancia = Vector3.Distance(transform.position, player.transform.position);
         if (distancia > maxDistance)
         {
-            Vector3 direction = player.transform.position - transform.position;
-            direction.Normalize();
-            rb.velocity = direction * speedMovement;
-            RotateTowardsMovementDirection(direction);
+            agent.SetDestination(player.transform.position);
         }
         else
         {
@@ -93,7 +87,6 @@ public class StatesEnemy : MonoBehaviour
 
     void ArroundToPatrol()
     {
-        // Verificar si el jugador está dentro de la zona de ataque
         float distanciaAlJugador = Vector3.Distance(transform.position, player.transform.position);
         if (distanciaAlJugador < bufferZoneRadius)
         {
@@ -101,28 +94,13 @@ public class StatesEnemy : MonoBehaviour
             return;
         }
 
-        // Lógica de patrulla usando waypoints
-        Vector3 objetivoActual = wayPoints[indiceWaypointActual].transform.position;
-        Vector3 direccion = objetivoActual - transform.position;
-        direccion.Normalize();
-
-        // Actualizar movimiento y rotación
-        rb.velocity = direccion * speedMovement;
-        //RotateTowardsMovementDirection(direccion);
-
-        // Verificar si se alcanzó el waypoint y actualizar el índice
-        if (Vector3.Distance(transform.position, objetivoActual) < distanciaAlcanzarWaypoint)
+        if (!agent.pathPending && agent.remainingDistance < distanciaAlcanzarWaypoint)
         {
             indiceWaypointActual = (indiceWaypointActual + 1) % wayPoints.Length;
+            agent.SetDestination(wayPoints[indiceWaypointActual].transform.position);
+            currentState = EnemyStates.Patrol;
         }
     }
 
-    void RotateTowardsMovementDirection(Vector3 direction)
-    {
-        if (direction != Vector3.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * speedRotation);
-        }
-    }
+    
 }
