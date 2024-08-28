@@ -25508,8 +25508,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 89775674318032919, guid: cacecf6e6f634cf4f92a2302b0b350be,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.507
+      objectReference: {fileID: 0}
+    - target: {fileID: 89775674318032919, guid: cacecf6e6f634cf4f92a2302b0b350be,
+        type: 3}
       propertyPath: MinDistance
       value: 0.48425293
+      objectReference: {fileID: 0}
+    - target: {fileID: 89775674318032919, guid: cacecf6e6f634cf4f92a2302b0b350be,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 982030288310264730, guid: cacecf6e6f634cf4f92a2302b0b350be,
         type: 3}
