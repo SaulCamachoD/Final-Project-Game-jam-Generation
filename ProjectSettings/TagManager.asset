@@ -34,6 +34,7 @@ TagManager:
   - Checkpoint
   - Bullet
   - Car
+  - TextPosition
   layers:
   - Default
   - TransparentFX

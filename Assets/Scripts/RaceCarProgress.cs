@@ -7,6 +7,14 @@ public class RaceCarProgress : MonoBehaviour
 
     private int currentPosition = 0;
 
+    private void Awake()
+    {
+        GameObject textObject = GameObject.Find("TextPosition");
+        positionText = textObject.GetComponent<TextMeshProUGUI>();
+
+
+    }
+
     public void SetPositionText(TextMeshProUGUI textMeshProUGUI)
     {
         positionText = textMeshProUGUI;

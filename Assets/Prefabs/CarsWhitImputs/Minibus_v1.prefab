@@ -85,6 +85,8 @@ GameObject:
   - component: {fileID: -8896458956441440388}
   - component: {fileID: -8979806525296971665}
   - component: {fileID: 6817666793495686311}
+  - component: {fileID: -5249596612563694842}
+  - component: {fileID: 7950719984873097795}
   m_Layer: 0
   m_Name: Minibus_v1
   m_TagString: Player
@@ -771,6 +773,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5249596612563694842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeLimit: 3
+  flipThreshold: 45
+--- !u!114 &7950719984873097795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionText: {fileID: 0}
 --- !u!1 &2393246035135971201
 GameObject:
   m_ObjectHideFlags: 0
