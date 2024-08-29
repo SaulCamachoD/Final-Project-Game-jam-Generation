@@ -22,7 +22,9 @@ public class RaceCarProgress : MonoBehaviour
         if (positionText != null)
         {
             Debug.Log("chamba");
-            positionText.text = currentPosition.ToString();
+            positionText.text = $"Posición: {currentPosition.ToString()}";
+
+
         }
     }
 

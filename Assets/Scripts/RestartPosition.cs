@@ -76,7 +76,11 @@ public class RestartPosition : MonoBehaviour
 
             // Teletransporta al coche al punto de control y restablece la rotación
             transform.position = lastCheckpoint.position;
-            transform.rotation = lastCheckpoint.rotation;
+            //transform.rotation = lastCheckpoint.rotation;
+
+            // Ajusta la rotación del coche con un giro de 180 grados en el eje Z
+            Quaternion adjustedRotation = lastCheckpoint.rotation * Quaternion.Euler(0, 180, 0);
+            transform.rotation = adjustedRotation;
 
             idleTime = 0f;  // Reinicia el tiempo de inactividad tras la teletransportación
         }
