@@ -25,6 +25,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT-9M Pistol 9mm Bullet_Low Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2474189662675837775, guid: c8ed49fe70796f7459526396512af8a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 2962742723113449973, guid: c8ed49fe70796f7459526396512af8a5,
         type: 3}
       propertyPath: m_LocalPosition.x

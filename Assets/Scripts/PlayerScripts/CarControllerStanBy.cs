@@ -23,17 +23,21 @@ public class CarControllerStanBy : MonoBehaviour
     private float currentAcceleration;
     private float currentBrakeForce;
     public bool isBraking;
+    private bool canMove = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
+
         // Ajustar el centro de masa para mayor estabilidad
         rb.centerOfMass = new Vector3(0, -0.5f, 0);
     }
 
     void Update()
     {
+        if (!canMove) return;
+
+
         currentAcceleration = Input.GetAxis("Vertical") * motorForce;
         currentSteerAngle = Input.GetAxis("Horizontal") * maxSteeringAngle;
         currentAngleWheels = Input.GetAxis("Horizontal") * wheelsAngle;
@@ -49,6 +53,8 @@ public class CarControllerStanBy : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!canMove) return;
+
         HandleMotor();
         HandleSteering();
     }
@@ -78,7 +84,7 @@ public class CarControllerStanBy : MonoBehaviour
         {
             float steerAngle = currentSteerAngle;
 
-            // Ajustar el ángulo de giro en reversa
+            // Ajustar el �ngulo de giro en reversa
             if (Input.GetAxis("Vertical") < 0)
             {
                 steerAngle = -currentSteerAngle;
@@ -99,4 +105,17 @@ public class CarControllerStanBy : MonoBehaviour
         rearLeftWheel.Rotate(Vector3.right, rotationSpeed);
         rearRightWheel.Rotate(Vector3.right, rotationSpeed);
     }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
+
+
 }

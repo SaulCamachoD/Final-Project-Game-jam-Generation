@@ -681,9 +681,10 @@ GameObject:
   - component: {fileID: 4226627744511681043}
   - component: {fileID: 6462193429545058502}
   - component: {fileID: 8730312371934720759}
+  - component: {fileID: -7138238280285971262}
   m_Layer: 0
   m_Name: Buggy_v1
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -889,6 +890,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.807909, y: 1.3232026, z: 3.03891}
   m_Center: {x: 0, y: 0.2040894, z: -0.2378369}
+--- !u!114 &-7138238280285971262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727082068260768360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b289b706aa0a6469959f89099495a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 100
 --- !u!1 &7918821539316544856
 GameObject:
   m_ObjectHideFlags: 0

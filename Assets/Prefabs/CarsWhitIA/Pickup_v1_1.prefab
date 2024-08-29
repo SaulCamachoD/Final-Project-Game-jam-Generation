@@ -514,9 +514,10 @@ GameObject:
   - component: {fileID: 6763620359015680129}
   - component: {fileID: 889501999839249484}
   - component: {fileID: 6683432046214582614}
+  - component: {fileID: -7636920381530925725}
   m_Layer: 0
   m_Name: Pickup_v1_1
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -710,6 +711,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7636920381530925725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529419235818144585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b289b706aa0a6469959f89099495a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 500
 --- !u!1 &4341920734737507809
 GameObject:
   m_ObjectHideFlags: 0
