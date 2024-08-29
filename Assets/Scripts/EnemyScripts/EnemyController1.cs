@@ -110,7 +110,6 @@ public class EnemyController1 : MonoBehaviour
             float distance = Vector3.Distance(transform.position, nearestAvailablePosition);
             if (distance > distanceToWeapon)
             {
-            print(distance);
             agent.SetDestination(nearestAvailablePosition);
                 
             }
