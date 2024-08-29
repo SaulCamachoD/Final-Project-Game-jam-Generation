@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e47d971842a6a344986c04f4a66a3872
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227889
+  packageName: NZ PT-9M Pistol
+  packageVersion: 1.0
+  assetPath: Assets/NZ PT-9M Pistol/BuiltInSettings/Post-processing Profile.asset
+  uploadId: 529303

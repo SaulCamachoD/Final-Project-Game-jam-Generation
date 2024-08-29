@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3086c8a4c206e3848ae70f659fab3940
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227889
+  packageName: NZ PT-9M Pistol
+  packageVersion: 1.0
+  assetPath: Assets/NZ PT-9M Pistol/BuiltInSettings/LightingData.asset
+  uploadId: 529303
