@@ -359,6 +359,8 @@ GameObject:
   - component: {fileID: 8128973227014312155}
   - component: {fileID: 4472015917029669272}
   - component: {fileID: 7774022506935433831}
+  - component: {fileID: 1056408520844212324}
+  - component: {fileID: 6654442429359467325}
   m_Layer: 0
   m_Name: HCoupe_v1
   m_TagString: Player
@@ -548,6 +550,33 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1056408520844212324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339706589478053747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeLimit: 4
+  flipThreshold: 45
+--- !u!114 &6654442429359467325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339706589478053747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionText: {fileID: 0}
 --- !u!1 &5899411074449778247
 GameObject:
   m_ObjectHideFlags: 0

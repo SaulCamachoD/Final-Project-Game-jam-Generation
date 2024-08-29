@@ -31,6 +31,9 @@ TagManager:
   - RacePoint_3
   - PatrolPoint_4
   - PatrolPoint_5
+  - Checkpoint
+  - Bullet
+  - Car
   layers:
   - Default
   - TransparentFX

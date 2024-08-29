@@ -23,6 +23,7 @@ public class CarControllerStanBy : MonoBehaviour
     private float currentAcceleration;
     private float currentBrakeForce;
     public bool isBraking;
+    private bool canMove = true;
 
     void Start()
     {
@@ -31,6 +32,9 @@ public class CarControllerStanBy : MonoBehaviour
 
     void Update()
     {
+        if (!canMove) return;
+
+
         currentAcceleration = Input.GetAxis("Vertical") * motorForce;
         currentSteerAngle = Input.GetAxis("Horizontal") * maxSteeringAngle;
         currentAngleWheels = Input.GetAxis("Horizontal") * wheelsAngle;
@@ -44,6 +48,8 @@ public class CarControllerStanBy : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!canMove) return;
+
         HandleMotor();
         HandleSteering();
     }
@@ -75,7 +81,7 @@ public class CarControllerStanBy : MonoBehaviour
         {
             float steerAngle = currentSteerAngle;
 
-            // Ajustar el ángulo de giro en reversa
+            // Ajustar el ï¿½ngulo de giro en reversa
             if (Input.GetAxis("Vertical") < 0)
             {
                 steerAngle = -currentSteerAngle;
@@ -88,15 +94,26 @@ public class CarControllerStanBy : MonoBehaviour
 
     private void RotateWheels(float rotationSpeed)
     {
-        // Ajusta la rotación en el eje X para simular el movimiento
+        // Ajusta la rotaciï¿½n en el eje X para simular el movimiento
         frontLeftWheel.Rotate(Vector3.right, rotationSpeed);
         frontRightWheel.Rotate(Vector3.right, rotationSpeed);
 
-        // Ajusta la rotación en el eje X para las ruedas traseras
+        // Ajusta la rotaciï¿½n en el eje X para las ruedas traseras
         rearLeftWheel.Rotate(Vector3.right, rotationSpeed);
         rearRightWheel.Rotate(Vector3.right, rotationSpeed);
 
-       
+
     }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
 
 }

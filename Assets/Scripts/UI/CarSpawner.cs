@@ -1,5 +1,6 @@
 using Cinemachine;
 using UnityEngine;
+using TMPro;
 
 public class CarSpawner : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class CarSpawner : MonoBehaviour
     public GameObject[] carPrefabsPlayer;
     public GameObject[] carPrefabsAI;
     public CinemachineVirtualCamera cinemachineCamera; // Referencia a la CinemachineVirtualCamera
+    public TextMeshProUGUI positionTextCanvas; // TextMesh Pro
+
+
 
     void Start()
     {
@@ -15,11 +19,12 @@ public class CarSpawner : MonoBehaviour
 
         // Instanciar el carro del jugador
         GameObject playerCar = Instantiate(carPrefabsPlayer[playerCarIndex], playerSpawnPoint.position, playerSpawnPoint.rotation);
+        playerCar.GetComponent<RaceCarProgress>().positionText = positionTextCanvas;
 
         // Encontrar el objeto hijo llamado "target" del carro del jugador
         Transform targetTransform = playerCar.transform.Find("Target");
 
-        // Asignar el objeto "target" a los campos Follow y Look At de la cámara
+        // Asignar el objeto "target" a los campos Follow y Look At de la cï¿½mara
         if (targetTransform != null && cinemachineCamera != null)
         {
             cinemachineCamera.Follow = targetTransform;

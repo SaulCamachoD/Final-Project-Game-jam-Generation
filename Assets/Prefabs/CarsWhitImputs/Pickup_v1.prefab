@@ -1441,6 +1441,8 @@ GameObject:
   - component: {fileID: 2825514155374281811}
   - component: {fileID: 3638199635751894629}
   - component: {fileID: 8656941694987530065}
+  - component: {fileID: 463681027964906155}
+  - component: {fileID: -5627346941818080792}
   m_Layer: 0
   m_Name: Pickup_v1
   m_TagString: Player
@@ -1636,6 +1638,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &463681027964906155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789309632957783001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeLimit: 3
+  flipThreshold: 45
+--- !u!114 &-5627346941818080792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789309632957783001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionText: {fileID: 0}
 --- !u!1 &9051627338488630115
 GameObject:
   m_ObjectHideFlags: 0

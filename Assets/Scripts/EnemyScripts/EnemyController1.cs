@@ -106,21 +106,21 @@ public class EnemyController1 : MonoBehaviour
 
     void MoveAWeapons()
     {
-        
-            float distance = Vector3.Distance(transform.position, nearestAvailablePosition);
-            if (distance > distanceToWeapon)
-            {
-            print(distance);
+
+        float distance = Vector3.Distance(transform.position, nearestAvailablePosition);
+        if (distance > distanceToWeapon)
+        {
+
             agent.SetDestination(nearestAvailablePosition);
-                
-            }
-            else
-            {
-                
-                currentState = EnemyStates.Patrol;
-            }
-        
-        
+
+        }
+        else
+        {
+
+            currentState = EnemyStates.Patrol;
+        }
+
+
     }
 
     void NormalPatrol()
@@ -147,7 +147,7 @@ public class EnemyController1 : MonoBehaviour
     {
         GetWeapons();
 
-        agent.updateRotation = true; // Asegura que el agente maneje la rotación automáticamente
+        agent.updateRotation = true; // Asegura que el agente maneje la rotaciï¿½n automï¿½ticamente
 
         // Moverse hacia el jugador usando NavMeshAgent
         agent.SetDestination(player.transform.position);
@@ -220,7 +220,7 @@ public class EnemyController1 : MonoBehaviour
         yield return new WaitForSeconds(0.5f); // Esperar medio segundo
         agent.isStopped = false; // Reanudar el agente
 
-        // Establecer el destino al próximo punto de patrullaje
+        // Establecer el destino al prï¿½ximo punto de patrullaje
         currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
         agent.SetDestination(patrolPoints[currentPointIndex].position);
     }
