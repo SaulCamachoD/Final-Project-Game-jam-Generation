@@ -1565,9 +1565,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  motorForce: 50
+  motorForce: 500
   maxSteeringAngle: 2
-  maxSpeed: 60
+  maxSpeed: 600
   wheelsAngle: 45
   drag: 5
   brakeForce: 40
@@ -1619,7 +1619,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8789309632957783001}
   serializedVersion: 4
-  m_Mass: 5
+  m_Mass: 3
   m_Drag: 2
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
