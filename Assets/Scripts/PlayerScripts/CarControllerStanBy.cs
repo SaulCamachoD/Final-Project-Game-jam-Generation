@@ -27,6 +27,9 @@ public class CarControllerStanBy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
+        // Ajustar el centro de masa para mayor estabilidad
+        rb.centerOfMass = new Vector3(0, -0.5f, 0);
     }
 
     void Update()
@@ -39,7 +42,9 @@ public class CarControllerStanBy : MonoBehaviour
         float rotationSpeed = rb.velocity.magnitude * (Input.GetAxis("Vertical") >= 0 ? 1 : -1);
         RotateWheels(rotationSpeed);
 
-
+        // Limitar la velocidad de giro basada en la velocidad del vehículo
+        float speedFactor = Mathf.Clamp01(rb.velocity.magnitude / maxSpeed);
+        currentSteerAngle *= (1f - speedFactor * 0.5f);  // Reduce el ángulo de giro a altas velocidades
     }
 
     void FixedUpdate()
@@ -58,10 +63,8 @@ public class CarControllerStanBy : MonoBehaviour
 
         if (rb.velocity.magnitude < maxSpeed)
         {
-
             rb.AddForce(transform.forward * currentAcceleration, ForceMode.Force);
         }
-
 
         if (isBraking)
         {
@@ -75,7 +78,7 @@ public class CarControllerStanBy : MonoBehaviour
         {
             float steerAngle = currentSteerAngle;
 
-            // Ajustar el �ngulo de giro en reversa
+            // Ajustar el ángulo de giro en reversa
             if (Input.GetAxis("Vertical") < 0)
             {
                 steerAngle = -currentSteerAngle;
@@ -88,15 +91,12 @@ public class CarControllerStanBy : MonoBehaviour
 
     private void RotateWheels(float rotationSpeed)
     {
-        // Ajusta la rotaci�n en el eje X para simular el movimiento
+        // Ajusta la rotación en el eje X para simular el movimiento
         frontLeftWheel.Rotate(Vector3.right, rotationSpeed);
         frontRightWheel.Rotate(Vector3.right, rotationSpeed);
 
-        // Ajusta la rotaci�n en el eje X para las ruedas traseras
+        // Ajusta la rotación en el eje X para las ruedas traseras
         rearLeftWheel.Rotate(Vector3.right, rotationSpeed);
         rearRightWheel.Rotate(Vector3.right, rotationSpeed);
-
-       
     }
-
 }
