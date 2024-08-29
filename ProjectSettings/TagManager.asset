@@ -21,6 +21,16 @@ TagManager:
   - AM1
   - AM2
   - AM3
+  - PatrolPoint
+  - RacePoint
+  - PatrolPoint_1
+  - PatrolPoint_2
+  - RacePoint_1
+  - RacePoint_2
+  - PatrolPoint_3
+  - RacePoint_3
+  - PatrolPoint_4
+  - PatrolPoint_5
   layers:
   - Default
   - TransparentFX

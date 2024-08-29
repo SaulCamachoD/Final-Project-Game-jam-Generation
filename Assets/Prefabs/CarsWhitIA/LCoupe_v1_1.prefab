@@ -295,8 +295,9 @@ GameObject:
   - component: {fileID: 6402100104430853555}
   - component: {fileID: 4551641497454306847}
   - component: {fileID: 1609855437285140353}
-  - component: {fileID: 5562722365214639395}
+  - component: {fileID: 7678774195446177683}
   - component: {fileID: 7967271515743055303}
+  - component: {fileID: 2188009316957940873}
   m_Layer: 0
   m_Name: LCoupe_v1_1
   m_TagString: Player
@@ -463,7 +464,7 @@ MonoBehaviour:
   - {fileID: 3520039219456942827, guid: 4fc5340bfba55724bade2469f3d71190, type: 3}
   - {fileID: 9204317324460541453, guid: 377233353ed85a44f875bff62275fbbc, type: 3}
   weaponPoint: {fileID: 5043061042637056892}
---- !u!114 &5562722365214639395
+--- !u!114 &7678774195446177683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,22 +473,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7145381124367454183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa501a4c976619f4db96302f0fa7d0a2, type: 3}
+  m_Script: {fileID: 11500000, guid: bf75a609ceb7f134a90824be71f09e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   powerUpsweapon: {fileID: 0}
-  distanceToWeapon: 2.5
+  distanceToWeapon: 4
   speedMovement: 2
   speedRotation: 5
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  racePoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolPoints: []
+  racePoints: []
   WeaponSpawnPoint: {fileID: 5043061042637056892}
   currentState: 0
 --- !u!195 &7967271515743055303
@@ -500,7 +495,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2.3509724
-  m_Speed: 20
+  m_Speed: 4
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 180
@@ -512,6 +507,22 @@ NavMeshAgent:
   m_BaseOffset: 0.6512308
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!208 &2188009316957940873
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7145381124367454183}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2110001, y: 0.651, z: 2.351}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7272579031052492771
 GameObject:
   m_ObjectHideFlags: 0
