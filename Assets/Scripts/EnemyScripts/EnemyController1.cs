@@ -40,11 +40,12 @@ public class EnemyController1 : MonoBehaviour
         Run
     }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         powerUpsweapon = GameObject.Find("WeaponsSpawnsPoints");
-        player = GameObject.FindGameObjectWithTag("Player"); 
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        AssignPatrolAndRacePoints();
+
     }
     void Start()
     {
@@ -224,4 +225,28 @@ public class EnemyController1 : MonoBehaviour
         agent.SetDestination(patrolPoints[currentPointIndex].position);
     }
 
+    protected virtual void AssignPatrolAndRacePoints()
+    {
+        // Busca todos los objetos con los tags correspondientes
+        GameObject[] racePointsObjects = GameObject.FindGameObjectsWithTag("RacePoint");
+        GameObject[] patrolPointsObjects = GameObject.FindGameObjectsWithTag("PatrolPoint");
+
+        // Ordena los objetos por nombre
+        System.Array.Sort(racePointsObjects, (a, b) => a.name.CompareTo(b.name));
+        System.Array.Sort(patrolPointsObjects, (a, b) => a.name.CompareTo(b.name));
+
+        racePoints = new Transform[racePointsObjects.Length];
+        for (int i = 0; i < racePointsObjects.Length; i++)
+        {
+            racePoints[i] = racePointsObjects[i].transform;
+        }
+
+        // Asigna los Transform de esos objetos a los arreglos
+        patrolPoints = new Transform[patrolPointsObjects.Length];
+        for (int i = 0; i < patrolPointsObjects.Length; i++)
+        {
+            patrolPoints[i] = patrolPointsObjects[i].transform;
+        }
+
+    }
 }
