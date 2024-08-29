@@ -343,7 +343,6 @@ GameObject:
   - component: {fileID: 2809033711371954274}
   - component: {fileID: 5917687594155879981}
   - component: {fileID: 463687484479459032}
-  - component: {fileID: 7976151514615111484}
   m_Layer: 0
   m_Name: Tire_v4_R
   m_TagString: Untagged
@@ -416,27 +415,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7976151514615111484
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161321086680498373}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.49936104
-  m_Center: {x: 0.20068704, y: -0.00000040233135, z: -0.000000461936}
 --- !u!1 &5513276461471914948
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +426,6 @@ GameObject:
   - component: {fileID: 2980577193969342944}
   - component: {fileID: 6649205934500252070}
   - component: {fileID: 4956966164636048470}
-  - component: {fileID: 5568242950211284803}
   m_Layer: 0
   m_Name: Tire_v5_L
   m_TagString: Untagged
@@ -521,27 +498,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5568242950211284803
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5513276461471914948}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.48537728
-  m_Center: {x: -0.14653689, y: -0.000001013279, z: -0.0000009536743}
 --- !u!1 &6579286800497023998
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +509,6 @@ GameObject:
   - component: {fileID: 8634261339023989085}
   - component: {fileID: 2530380731844599080}
   - component: {fileID: 1431072508806406346}
-  - component: {fileID: 6811327810665026517}
   m_Layer: 0
   m_Name: Tire_v5_R
   m_TagString: Untagged
@@ -626,27 +581,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6811327810665026517
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6579286800497023998}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.48537728
-  m_Center: {x: 0.14653692, y: -0.000001013279, z: -0.0000009536743}
 --- !u!1 &7232261528329434870
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,12 +675,12 @@ GameObject:
   - component: {fileID: 4812979000355593896}
   - component: {fileID: 56952968463709719}
   - component: {fileID: 6154504408251702397}
-  - component: {fileID: 7800310330007456059}
   - component: {fileID: 5303959020631295770}
   - component: {fileID: 6692034645152418469}
   - component: {fileID: 6982107314350378759}
   - component: {fileID: 4226627744511681043}
   - component: {fileID: 6462193429545058502}
+  - component: {fileID: 8730312371934720759}
   m_Layer: 0
   m_Name: Buggy_v1
   m_TagString: Untagged
@@ -829,27 +763,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7800310330007456059
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7727082068260768360}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.1523247, y: 1.2478197, z: 4.1812086}
-  m_Center: {x: -0.036626816, y: -0.43212664, z: -0.14721441}
 --- !u!54 &5303959020631295770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -873,7 +786,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -936,7 +849,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.7313814
-  m_BaseOffset: 0.8656907
+  m_BaseOffset: 0.77
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!208 &6462193429545058502
@@ -955,6 +868,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &8730312371934720759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727082068260768360}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.807909, y: 1.3232026, z: 3.03891}
+  m_Center: {x: 0, y: 0.2040894, z: -0.2378369}
 --- !u!1 &7918821539316544856
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +931,6 @@ GameObject:
   - component: {fileID: 772633531628776902}
   - component: {fileID: 1744129819800315585}
   - component: {fileID: 4771630956864528206}
-  - component: {fileID: 5214890648648305224}
   m_Layer: 0
   m_Name: Tire_v4_L
   m_TagString: Untagged
@@ -1070,24 +1003,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5214890648648305224
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7949286285901029292}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.49936104
-  m_Center: {x: -0.20068704, y: -0.00000043213367, z: -0.0000004917383}
