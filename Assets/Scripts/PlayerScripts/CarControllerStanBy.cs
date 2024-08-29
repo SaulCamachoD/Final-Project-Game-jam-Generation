@@ -28,7 +28,7 @@ public class CarControllerStanBy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
+
         // Ajustar el centro de masa para mayor estabilidad
         rb.centerOfMass = new Vector3(0, -0.5f, 0);
     }
@@ -105,4 +105,17 @@ public class CarControllerStanBy : MonoBehaviour
         rearLeftWheel.Rotate(Vector3.right, rotationSpeed);
         rearRightWheel.Rotate(Vector3.right, rotationSpeed);
     }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
+
+
 }
