@@ -149,7 +149,7 @@ NavMeshAgent:
   m_Radius: 2.908516
   m_Speed: 15
   m_Acceleration: 20
-  avoidancePriority: 50
+  avoidancePriority: 99
   m_AngularSpeed: 180
   m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
@@ -166,7 +166,7 @@ NavMeshObstacle:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707284611455013958}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 1.6200001, y: 1.4870001, z: 2.9090002}
