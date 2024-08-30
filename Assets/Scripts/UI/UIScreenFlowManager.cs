@@ -18,6 +18,13 @@ public class UIScreenFlowManager : MonoBehaviour
         InactivateAllScreens();
         screens[1].SetActive(true);
     }
+
+    public void GoToTutorialScreen()
+    {
+        InactivateAllScreens();
+        screens[2].SetActive(true);
+    }
+
     public void OnPlayGameButtonPressed()
     {
         SceneManager.LoadScene("Main");
