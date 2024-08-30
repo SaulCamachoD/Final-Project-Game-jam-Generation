@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TommyGunHeavySB : TommyGunMidleSB
 {
-    // Array para múltiples puntos de spawneo
+    // Array para mï¿½ltiples puntos de spawneo
     public Transform[] firePoints;
     private int currentFirePointIndex = 0;
 
@@ -19,8 +19,8 @@ public class TommyGunHeavySB : TommyGunMidleSB
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.AddForce(firePoint.forward * bulletSpeed, ForceMode.Impulse);
 
-        // Activamos las partículas en el punto de spawneo actual
-        Fire.transform.position = firePoint.position; // Mover las partículas al punto de spawneo actual
+        // Activamos las partï¿½culas en el punto de spawneo actual
+        Fire.transform.position = firePoint.position; // Mover las partï¿½culas al punto de spawneo actual
         Fire.Play();
     }
 }

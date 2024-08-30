@@ -9,25 +9,40 @@ public class SpwanBullets : MonoBehaviour
     public float bulletSpeed = 20f;
     public float munition = 4f;
     protected bool _canShoot;
+    public bool isImput;
     protected private void Start()
     {
         _canShoot = true;
-      
+        Transform grandparent = transform.parent?.parent;
+
+        // Verificar si el abuelo existe y si tiene el tag "Player"
+        if (grandparent != null && grandparent.CompareTag("Player"))
+        {
+            isImput = true;
+        }
+        else
+        {
+            isImput = false;
+        }
     }
 
     protected virtual void Update()
-    {   
-        if (Input.GetButtonDown("Fire1") && _canShoot)
+    {
+        if (Input.GetButtonDown("Fire1") && _canShoot && isImput)
         {
-            Shoot();
-            _canShoot=false;
-            StartCoroutine(WaitShoot());
-            munition--;
+            HandleShooting();
+        }
+    }
 
-            if (munition <= 0)
-            {
-                Destroy(gameObject);
-            }
+    public virtual void HandleShooting()
+    {
+        Shoot();
+        _canShoot = false;
+        StartCoroutine(WaitShoot());
+        munition--;
+        if (munition <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -43,4 +58,5 @@ public class SpwanBullets : MonoBehaviour
         yield return new WaitForSeconds(3);
         _canShoot = true;
     }
+
 }

@@ -10,8 +10,6 @@ public class VerifyCheckpoint : MonoBehaviour
     {
         GameObject car;
 
-        Debug.Log("carro");
-
         if (other.CompareTag("Car") || other.CompareTag("Player"))
         {
             car = other.gameObject;

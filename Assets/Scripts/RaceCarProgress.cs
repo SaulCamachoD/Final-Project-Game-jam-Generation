@@ -7,7 +7,7 @@ public class RaceCarProgress : MonoBehaviour
 
     private int currentPosition = 0;
 
-    private void Awake()
+    private void Start()
     {
         GameObject textObject = GameObject.Find("TextPosition");
         positionText = textObject.GetComponent<TextMeshProUGUI>();
@@ -23,13 +23,10 @@ public class RaceCarProgress : MonoBehaviour
     public void UpdatePosition(int position)
     {
         currentPosition = position;
-        Debug.Log($"{gameObject.name} está en la posición {currentPosition}");
 
         // Actualiza el texto en la UI
-        Debug.Log(positionText);
         if (positionText != null)
         {
-            Debug.Log("chamba");
             positionText.text = $"Posición: {currentPosition.ToString()}";
 
 

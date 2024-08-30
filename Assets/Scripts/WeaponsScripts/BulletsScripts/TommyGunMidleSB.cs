@@ -7,7 +7,7 @@ public class TommyGunMidleSB : TommyGunLightSB
     public float burstTime = 4f;
     protected override void Update()
     {
-        if (Input.GetButton("Fire1") && !_isFiringBurst)
+        if (Input.GetButton("Fire1") && !_isFiringBurst && isImput)
         {
             StartCoroutine(FireBurst());
         }

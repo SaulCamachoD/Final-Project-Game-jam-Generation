@@ -29,8 +29,8 @@ public class EnemyController1 : MonoBehaviour
     private Rigidbody rb;
     private float distanceToPlayer;
     private NavMeshAgent agent;
-
     private Vector3 nearestAvailablePosition = Vector3.zero;
+    private ChronometerStartRun chronometer;
     public enum EnemyStates
     {
         GetWeapon,
@@ -45,6 +45,7 @@ public class EnemyController1 : MonoBehaviour
         powerUpsweapon = GameObject.Find("WeaponsSpawnsPoints");
         player = GameObject.FindGameObjectWithTag("Player");
         AssignPatrolAndRacePoints();
+        
 
     }
     void Start()
@@ -53,6 +54,12 @@ public class EnemyController1 : MonoBehaviour
         currentState = EnemyStates.GetWeapon;
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         agent = GetComponent<NavMeshAgent>();
+        chronometer = GameObject.Find("Timmer").GetComponent<ChronometerStartRun>();
+        if (chronometer != null)
+        {
+            chronometer.OnTimeOver += HandleTimeOver;
+        }
+
     }
     void Update()
     {
@@ -212,6 +219,10 @@ public class EnemyController1 : MonoBehaviour
             currentState = EnemyStates.Patrol;
 
         }
+    }
+    void HandleTimeOver()
+    {
+        currentState = EnemyStates.Run;
     }
 
     private IEnumerator ResumeMovementAfterDelay()

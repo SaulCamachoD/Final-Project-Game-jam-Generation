@@ -19,7 +19,7 @@ public class GetWeaponsInCar : MonoBehaviour
             { "AM2", 3 },
             { "AM3", 4 }
         };
-        weaponsSpawnManager = FindObjectOfType<WeaponsSpawnManager>();
+        weaponsSpawnManager = FindFirstObjectByType<WeaponsSpawnManager>();
     }
     private void OnTriggerEnter(Collider other)
     {

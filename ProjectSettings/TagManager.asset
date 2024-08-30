@@ -35,6 +35,7 @@ TagManager:
   - Bullet
   - Car
   - TextPosition
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -42,7 +43,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Target
   - 
   - Wall
   - First Person View

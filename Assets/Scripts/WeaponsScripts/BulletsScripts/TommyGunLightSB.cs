@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class TommyGunLightSB : SpwanBullets 
+public class TommyGunLightSB : SpwanBullets
 {
     public AudioSource shoot;
     public ParticleSystem Fire;
