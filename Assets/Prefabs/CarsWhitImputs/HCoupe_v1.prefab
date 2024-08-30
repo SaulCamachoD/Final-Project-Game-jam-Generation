@@ -123,7 +123,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 884652604682385672}
-  m_Layer: 0
+  - component: {fileID: 1495086619450973107}
+  m_Layer: 6
   m_Name: WeaponsSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4773958766949092121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1495086619450973107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735299300453498041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: -0.69, z: 0}
 --- !u!1 &2835444537503603967
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,11 +378,12 @@ GameObject:
   - component: {fileID: 3626094522654292113}
   - component: {fileID: 178114118568624820}
   - component: {fileID: 9222867209422750530}
+  - component: {fileID: 1056408520844212324}
+  - component: {fileID: 6654442429359467325}
+  - component: {fileID: 7044457372226636608}
   - component: {fileID: 8128973227014312155}
   - component: {fileID: 4472015917029669272}
   - component: {fileID: 7774022506935433831}
-  - component: {fileID: 1056408520844212324}
-  - component: {fileID: 6654442429359467325}
   m_Layer: 0
   m_Name: HCoupe_v1
   m_TagString: Player
@@ -486,6 +509,48 @@ MonoBehaviour:
   - {fileID: 9204317324460541453, guid: 377233353ed85a44f875bff62275fbbc, type: 3}
   - {fileID: 5615514890972757840, guid: dae0a0db073205f49b95b0a08b4aa73d, type: 3}
   weaponPoint: {fileID: 1735299300453498041}
+--- !u!114 &1056408520844212324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339706589478053747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeLimit: 4
+  flipThreshold: 45
+--- !u!114 &6654442429359467325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339706589478053747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionText: {fileID: 0}
+--- !u!114 &7044457372226636608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339706589478053747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1f1231931c81141b02ea8c3b5d7eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  damageBullet: 1
+  damageRocket: 20
 --- !u!65 &8128973227014312155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -550,33 +615,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &1056408520844212324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5339706589478053747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleTimeLimit: 4
-  flipThreshold: 45
---- !u!114 &6654442429359467325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5339706589478053747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
 --- !u!1 &5899411074449778247
 GameObject:
   m_ObjectHideFlags: 0

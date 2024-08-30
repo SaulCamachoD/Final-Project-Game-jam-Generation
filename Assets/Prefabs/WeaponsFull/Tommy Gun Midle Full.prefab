@@ -31,59 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9199582482248737873}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4698075634512675998
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3157347772941689589}
-  - component: {fileID: 8747830859370973561}
-  m_Layer: 6
-  m_Name: PointOfDetection
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3157347772941689589
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4698075634512675998}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.152, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9199582482248737873}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8747830859370973561
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4698075634512675998}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5120318, y: 0.06930959, z: 0.23176956}
-  m_Center: {x: -0.2439841, y: -0.1, z: -0.06429866}
 --- !u!1001 &4303148442961821952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,10 +178,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7293254230323952356}
-    - targetCorrespondingSourceObject: {fileID: 4885668540649084, guid: a04c6e8c42768734fb23ba0f05dfced7,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3157347772941689589}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1808889464843296, guid: a04c6e8c42768734fb23ba0f05dfced7,
         type: 3}
@@ -393,6 +336,6 @@ MonoBehaviour:
   targetLayerName: Target
   detectionRadius: 30
   shootDistance: 20
-  SpeedShoot: 3
+  SpeedShoot: 0.5
   isIAWeapons: 0
   shootRocket: {fileID: 3980846067149179839}

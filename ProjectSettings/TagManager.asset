@@ -36,6 +36,7 @@ TagManager:
   - Car
   - TextPosition
   - Enemy
+  - Rocket
   layers:
   - Default
   - TransparentFX

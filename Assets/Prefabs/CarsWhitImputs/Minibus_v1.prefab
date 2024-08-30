@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1108796460382410182}
-  m_Layer: 0
+  - component: {fileID: 5994048248516018843}
+  m_Layer: 6
   m_Name: WeaponSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2983829789423299440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5994048248516018843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430869606272447226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: -2.22}
 --- !u!1 &1125646880644954616
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,17 +98,18 @@ GameObject:
   - component: {fileID: 5564558158991240341}
   - component: {fileID: 1658691824091785007}
   - component: {fileID: 120084110185681784}
+  - component: {fileID: -5249596612563694842}
+  - component: {fileID: 6583003361359598336}
+  - component: {fileID: 7950719984873097795}
+  - component: {fileID: 6035386369351639980}
   - component: {fileID: 1992608637840939579}
   - component: {fileID: 7485941097253944019}
   - component: {fileID: 2703171415251627293}
-  - component: {fileID: 6583003361359598336}
   - component: {fileID: 4066867745391710751}
   - component: {fileID: 2595100328401424359}
   - component: {fileID: -8896458956441440388}
   - component: {fileID: -8979806525296971665}
   - component: {fileID: 6817666793495686311}
-  - component: {fileID: -5249596612563694842}
-  - component: {fileID: 7950719984873097795}
   m_Layer: 0
   m_Name: Minibus_v1
   m_TagString: Player
@@ -212,6 +235,65 @@ MonoBehaviour:
   - {fileID: 9204317324460541453, guid: 377233353ed85a44f875bff62275fbbc, type: 3}
   - {fileID: 5615514890972757840, guid: dae0a0db073205f49b95b0a08b4aa73d, type: 3}
   weaponPoint: {fileID: 430869606272447226}
+--- !u!114 &-5249596612563694842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeLimit: 3
+  flipThreshold: 45
+--- !u!114 &6583003361359598336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e7b7cfce05ff54a955b324dd3b02c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSound: {fileID: 4066867745391710751}
+  lowRPMSound: {fileID: 2595100328401424359}
+  medRPMSound: {fileID: -8896458956441440388}
+  highRPMSound: {fileID: -8979806525296971665}
+  startupSound: {fileID: 6817666793495686311}
+--- !u!114 &7950719984873097795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionText: {fileID: 0}
+--- !u!114 &6035386369351639980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979839624981642475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1f1231931c81141b02ea8c3b5d7eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  damageBullet: 1
+  damageRocket: 20
 --- !u!65 &1992608637840939579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -276,23 +358,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &6583003361359598336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979839624981642475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e7b7cfce05ff54a955b324dd3b02c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleSound: {fileID: 4066867745391710751}
-  lowRPMSound: {fileID: 2595100328401424359}
-  medRPMSound: {fileID: -8896458956441440388}
-  highRPMSound: {fileID: -8979806525296971665}
-  startupSound: {fileID: 6817666793495686311}
 --- !u!82 &4066867745391710751
 AudioSource:
   m_ObjectHideFlags: 0
@@ -773,33 +838,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-5249596612563694842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979839624981642475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 680ca78a61596da4b809b549a3ec7b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleTimeLimit: 3
-  flipThreshold: 45
---- !u!114 &7950719984873097795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979839624981642475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf240e658c5c68946a47701ef7c7fca5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
 --- !u!1 &2393246035135971201
 GameObject:
   m_ObjectHideFlags: 0
